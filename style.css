@@ -1,0 +1,105 @@
+ul{
+  list-style: none;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+.container {
+    max-width: 1200px;
+}
+
+header{
+  background-color: royalblue;
+  color:white;
+}
+
+/* NAV */
+
+header nav{
+  height: 90px;
+  font-weight: 700;
+}
+
+header nav ul li{
+  float: left;
+  margin-left: 24px;
+  position: relative;
+  line-height: 39px;
+
+}
+
+header nav ul .fas{
+  font-size: 12px;
+}
+
+header nav ul li.logo{
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+header nav li.logo img{
+  height: 30px;
+  position: relative;
+  bottom: 6px;
+}
+
+header nav .signUp{
+  padding: 8px 12px;
+  border:1px solid white;
+  border-radius: 5px;
+}
+
+header nav .hamburger{
+  display: none;
+  font-size: 25px;
+}
+
+/* HEADER SOTTO */
+
+header .sotto .row{
+  padding: 80px 0;
+}
+
+/* right */
+
+header .sotto .right{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+header .sotto .right > *{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header .sotto .right input, header .sotto .right button{
+  height:48px;
+  border-radius: 5px;
+}
+
+header .sotto .right button.sign-google img{
+  height: 18px;
+  position:absolute;
+  left:16px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+
+@media all and (max-width:1060px){
+
+  header nav ul li:not([class^="logo"]){
+    display: none;
+  }
+
+  header nav .hamburger{
+    display: inline-block;
+
+  }
+
+}
