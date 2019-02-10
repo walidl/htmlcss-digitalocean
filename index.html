@@ -9,6 +9,9 @@
     <title></title>
   </head>
   <body>
+
+    <!-- HEADER -->
+
     <header>
       <nav class="d-flex align-items-center">
         <div class="container">
@@ -34,23 +37,261 @@
           </div>
         </div>
       </nav>
+
+      <!-- sotto -->
+
       <div class="container sotto">
         <div class="row d-flex justify-content-between align-items-center px-3">
-          <div class="left col-md-5 mb-5 mb-md-0">
+          <div class="left col-md-6 mb-5 mb-md-0 pl-0 ">
             <h1>The simplest cloud platform for developers & teams</h1>
             <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand.</p>
           </div>
           <div class="right col-md-5 p-4">
-            <h2 class="text-center">Deploy your app in seconds.<br>Get started now.</h2>
+            <h2 class="text-center">Deploy your app in seconds.<br><p>Get started now.</p></h2>
             <input  class="px-3" type="email" name="" placeholder="Email Adress">
             <input class="px-3" type="password" name="" placeholder="Password">
-            <button class="text-center" type="button" name="button">Create your account</button>
-            <button class="sign-google text-center position-relative " type="button" name="button"><img src="img/google.svg">Sign up with Google</button>
-            <p class="text-center">By signing up you agree to the <a href="#">Terms of Service.</a></p>
+            <button id="create-account" class="text-center" type="button" name="button">Create your account</button>
+            <button id="signup-google" class="sign-google text-center position-relative " type="button" name="button"><img src="img/google.svg">Sign up with Google</button>
+            <p class=" terms text-center">By signing up you agree to the <a href="#">Terms of Service.</a></p>
+
           </div>
         </div>
       </div>
     </header>
+
+    <!-- CUSTOMERS LOGOS -->
+
+    <section class="customers-logos" background="grey">
+      <div class="container py-5">
+        <h3 class="text-center">INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h3>
+        <div class="d-flex align-items-center align-content-center justify-content-center  flex-wrap" >
+          <img src="img/docker.png">
+          <img src="img/gitlab.png">
+          <img src="img/slack.png">
+          <img src="img/hashicorp.png">
+          <img src="img/wework.png">
+          <img src="img/splunk.png">
+        </div>
+        <div class="text-center">
+          <a href="#">View Costumer stories<i class="fas fa-chevron-right pl-2"></i> </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPLOY -->
+
+    <section class="deploy pb-5">
+      <div class="container">
+        <h3 class="text-center">Deploy and scale seamlessly</h3>
+        <p class="text-center">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+        <div class="row py-5 justify-md-content-center">
+          <div class="left d-flex felx-column col-md-3 offset-0 offset-md-1 mb-4 mb-md-0">
+            <ul class="pl-0 col-12">
+              <li class="active"><a href="#">Deploy</a></li>
+              <li><a href="#">Manage</a></li>
+              <li><a href="#">Secure</a></li>
+              <li><a href="#">Scale</a></li>
+              <li><a href="#">Monitor</a></li>
+            </ul>
+          </div>
+          <div class="right col-md-7 d-flex flex-wrap">
+            <div class="item col-sm-6 mb-4">
+              <img class="mb-2"src="img/cluster.svg">
+              <h3 class="mb-3">Cluster deployments</h3>
+              <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+            </div>
+            <div class="item col-sm-6 mb-4">
+              <img class="mb-2" src="img/cluster.svg">
+              <h3 class="mb-3">Cluster deployments</h3>
+              <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+            </div>
+            <div class="item col-sm-6 mb-4">
+              <img class="mb-2" src="img/cluster.svg">
+              <h3 class="mb-3">Cluster deployments</h3>
+              <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+            </div>
+            <div class="item col-sm-6 mb-4">
+              <img class="mb-2" src="img/cluster.svg">
+              <h3 class="mb-3">Cluster deployments</h3>
+              <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGNED FOR DEVELOPERS -->
+
+    <section  class="designed" background="grey">
+      <div class="container">
+        <h2 class="text-center mb-4">Designed for developers</h2>
+        <p class="text-center">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+        <div class="row d-flex justify-content-center align-items-center pt-5 pb-2">
+          <a href="#"><i class="fas fa-chevron-left d-none d-md-inline"></i></a>
+          <div class="col-12 col-md-10">
+            <img class="img-fluid"src="img/screenshot.jpg">
+          </div>
+          <a href="#"><i class="fas fa-chevron-right d-none d-md-inline"></i></a>
+        </div>
+        <p class="text-center mb-5">Create compute server in 55 seconds or less</p>
+        <div class="row d-flex justify-content-center">
+          <ul class="d-flex points mb-5">
+            <li><a href="#" class="d-block mx-2 active"></a> </li>
+            <li><a href="#" class="d-block mx-2"></a> </li>
+            <li><a href="#" class="d-block mx-2"></a> </li>
+            <li><a href="#" class="d-block mx-2"></a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features">
+      <h2 class="text-center mb-5">The features your business needs</h2>
+      <div class="container">
+        <div class="row d-flex flex-wrap align-items-stretch">
+          <div class="item col-12 col-sm-6 col-md-4 mb-5 d-flex flex-column align-items-start">
+            <img class="mb-3"src="img/service.svg">
+            <h3 class="mb-3">Cluster deployments</h3>
+            <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+            <div class="link flex-fill d-flex-column mb-4">
+              <a href="#">Pricing<i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+          </div>
+          <div class="item col-12 col-sm-6 col-md-4 mb-5 d-flex flex-column align-items-start">
+            <img class="mb-3" src="img/service.svg">
+            <h3 class="mb-3">Cluster deployments</h3>
+            <p>Free round-the-clock technical support for all customers. You’ll feel the love.</p>
+            <div class="link flex-fill d-flex-column mb-4">
+              <a href="#">Pricing<i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+          </div>
+          <div class="item col-12 col-sm-6 col-md-4 mb-5 d-flex flex-column align-items-start">
+            <img class="mb-3" src="img/service.svg">
+            <h3 class="mb-3">Cluster deployments</h3>
+            <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+            <div class="link  class="" d-flex-column mb-4">
+              <a href="#">Pricing<i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- AROUND THE WORLD  -->
+
+    <section class="around">
+      <div class="container">
+        <h2 class="text-center col-12 col-md-8 offset-md-2 offset-0 mb-5 px-0">Service your customers around the world from 12 regions.</h2>
+        <div class="row">
+          <div class="tab">
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>AMS2</strong></span>
+              <span class=" city pl-2">Amsterdam, Netherlands</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>AMS2</strong></span>
+              <span class=" city pl-2">Amsterdam, Netherlands</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+            <div class="riga d-flex py-2 pr-3">
+              <span class="col-2"><strong>LON1</strong></span>
+              <span class=" city pl-2">Bangalore, India</span>
+              <a class="ml-auto" href="">Test speed <i class="fas fa-chevron-right pl-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row d-flex justify-content">
+          <div class="left col-12 col-lg-4 mb-5">
+            <img class="mb-3" src="img/logo2.svg">
+            <p>© 2019 DigitalOcean, LLC. All rights reserved.<br>
+              <a href="#">Proudly made in NY</a></p>
+              <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+          </div>
+          <div class="right d-flex col-12 col-lg-8 px-0 flex-wrap">
+            <div class="list col-12 col-sm-6 col-lg-3">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </div>
+            <div class="list col-12 col-sm-6 col-lg-3">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </div>
+            <div class="list col-12 col-sm-6 col-lg-3">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+
+              </ul>
+            </div>
+            <div class="list col-12 col-sm-6 col-lg-3">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
 
   </body>
 </html>

@@ -7,33 +7,46 @@ a, a:hover{
   color:inherit;
 }
 
+[background="grey"]{
+  background-color: #F3F5F9
+}
 
 .container {
     max-width: 1200px;
 }
 
+[class *="fa-chevron"]{
+  font-size: 12px;
+}
+
 header{
   background-color: royalblue;
-  color:white;
+  background-image: url("img/hero_back.svg");
+  background-size: cover;
+  background-position: bottom;
 }
 
 /* NAV */
 
 header nav{
   height: 90px;
-  font-weight: 700;
+  color:white;
 }
 
 header nav ul li{
   float: left;
   margin-left: 24px;
   position: relative;
-  line-height: 39px;
-
+  line-height: 42px;
 }
 
-header nav ul .fas{
-  font-size: 12px;
+header nav ul li a{
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  font-weight: 600;
+}
+header nav ul li a:hover{
+  opacity: 1;
 }
 
 header nav ul li.logo{
@@ -47,10 +60,16 @@ header nav li.logo img{
   bottom: 6px;
 }
 
-header nav .signUp{
+header nav ul li a.signUp{
   padding: 8px 12px;
   border:1px solid white;
+  transition: background-color 0.5s ease;
   border-radius: 5px;
+  opacity: 1;
+}
+
+header nav ul li a.signUp:hover{
+  background-color: rgba(255,255,255,0.1);
 }
 
 header nav .hamburger{
@@ -64,12 +83,34 @@ header .sotto .row{
   padding: 80px 0;
 }
 
+/* left */
+header .sotto .left{
+  color:white;
+}
+header .sotto .left h1{
+  font-size: 62px;
+}
+
+header .sotto .left p{
+  font-size: 20px;
+  opacity: 0.7;
+}
 /* right */
 
 header .sotto .right{
   background-color: white;
-  color: black;
   border-radius: 5px;
+  border: 1px solid #f1f1f1
+}
+
+header .sotto .right h2{
+  color:#031b4e;
+  font-weight: 700;
+}
+
+header .sotto .right h2 > p{
+  color:#0069ff;
+  margin-top:10px;
 }
 
 header .sotto .right > *{
@@ -80,6 +121,42 @@ header .sotto .right > *{
 header .sotto .right input, header .sotto .right button{
   height:48px;
   border-radius: 5px;
+  border:none;
+}
+
+header .sotto .right input{
+  border: 1px solid #f1f1f1;
+  color: #031b4e;
+}
+
+header .sotto .right input::placeholder{
+  color: #031b4e;
+  opacity: 0.8;
+}
+
+header .sotto .right button{
+  cursor:pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+#create-account{
+  background-color: #0069FF;
+  color: white;
+}
+
+#create-account:hover{
+  background-color: #1633ff;
+}
+
+#signup-google{
+  background-color: white;
+  color:#757575;
+  box-shadow: 0 0 1px rgba(0,0,0,.12), 0 1px 1px rgba(0,0,0,.24);
+}
+
+#signup-google:hover{
+  background-color:#EEEEEE
 }
 
 header .sotto .right button.sign-google img{
@@ -90,6 +167,220 @@ header .sotto .right button.sign-google img{
   transform: translateY(-50%);
 }
 
+header .sotto .right .terms{
+  font-size: 13px;
+}
+
+header .sotto .right .terms a{
+  text-decoration: underline;
+  color: #0069FF;
+}
+
+
+/* CUSTOMERS LOGOS */
+
+.customers-logos h3{
+  font-size: 16px;
+  color: #031b4e;
+  opacity: .6;
+  font-weight: 600;
+}
+
+.customers-logos img{
+  width: 150px;
+  margin: 20px;
+}
+
+.customers-logos a{
+  color: #005fe6;
+  font-weight: 600;;
+}
+
+/* DEPLOY */
+
+.deploy{
+  padding-top: 100px;
+}
+
+/* left */
+
+.deploy .row .left ul li{
+  height: 60px;
+  padding-left: 15px;
+  border-left: 2px solid rgb(0, 105, 255,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.deploy .row .left ul li.active{
+  border-left: 2px solid rgba(0, 105, 255,1);
+}
+
+.deploy .row .left ul li a{
+  opacity: 0.6;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.deploy .row .left ul li.active a, .deploy .row .left ul li a:hover{
+  opacity: 1;
+}
+
+/* right */
+
+.deploy .row .right .item img{
+  height: 40px;
+}
+
+.deploy .row .right .item h3{
+  font-size: 18px;
+}
+
+.deploy .row .right .item p{
+  opacity: 0.6;
+}
+
+/* DESIGNED FOR DEVELOPERS */
+
+.designed .container{
+  max-width: 900px;
+}
+
+.designed{
+  padding-top:100px;
+  padding-bottom: 70px;
+}
+
+.designed .fas{
+  font-size: 40px;
+}
+
+.designed .row div > img{
+  border-radius: 5px;
+}
+
+.designed .points a{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #0069FF;
+  border-radius: 50%;
+}
+
+.designed .points a.active{
+  background-color: #0069FF;
+}
+
+.designed .points a:hover{
+  background-color: rgba(0, 105, 255,0.2);
+}
+
+/* FEATURES */
+
+.features{
+  padding-top:100px;
+  padding-bottom: 70px;
+  color:#031b4e;
+}
+
+.features h2{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.features .row > div img{
+  height: 40px;
+}
+
+.features .row > div h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.features .row > div p{
+  opacity: 0.7;
+}
+
+.features .row > div .link a{
+  position: absolute;
+  bottom:0;
+  color: #005fe6;
+  font-weight: 600;
+}
+
+/* AROUND THE WORLD */
+
+.around{
+  background-image: url("img/data-center.svg"),linear-gradient(180deg,#0047c6 0,#001d99);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  color:white;
+  padding-top:100px;
+  padding-bottom: 100px;
+  font-size: 13px;
+}
+
+.around h2{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.around .row .tab{
+  width: 50%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.around .row .tab .riga .city{
+  opacity: .7;
+}
+
+.around .row .tab .riga a{
+  color: #00d7d2;
+  font-weight:600;
+  transition: opacity 0.3s ease;
+}
+
+.around .row .tab .riga a:hover{
+  opacity: 0.7;
+}
+
+.around .row .tab .riga:not(:last-child){
+  border-bottom: 1px solid white;
+}
+
+/* FOOTER */
+
+footer{
+  color: rgba(255,255,255,0.5);
+  background-color: #010e28;
+  padding-top:100px;
+  padding-bottom: 100px;
+  font-size: 14px;
+}
+
+footer .right h4{
+  font-size: 14px;
+  color: white;
+}
+
+footer .right ul{
+  padding-left:0;
+}
+
+footer .right li{
+  height: 25px;
+}
+
+footer a:hover, footer .social .fab:hover{
+  color:white;
+}
+
+footer .social .fab{
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* MEDIA QUERY ........................ */
 
 @media all and (max-width:1060px){
 
@@ -99,7 +390,22 @@ header .sotto .right button.sign-google img{
 
   header nav .hamburger{
     display: inline-block;
+  }
 
+}
+
+@media all and (max-width:960px){
+
+  header nav ul li:not([class^="logo"]){
+    display: none;
+  }
+
+  .around .row .tab{
+    width: 100%;
+  }
+
+  header .sotto .left h1{
+    font-size: 40px;
   }
 
 }
